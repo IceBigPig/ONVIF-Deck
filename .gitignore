@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Build and release artifacts
+build/
+dist/
+*.dmg
+*.zip
+*.pkg
+
+# Local settings, credentials and editor files
+.env
+.env.*
+*.ini
+*.log
+.idea/
+.vscode/
+
+# Private design iterations and real-camera screenshots. Public, sanitized
+# screenshots live under docs/images/.
+design/

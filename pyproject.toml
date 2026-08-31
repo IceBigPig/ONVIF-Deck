@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onvif-deck"
+version = "1.1.1"
+description = "ONVIF camera discovery, stream inspection, and multi-view RTSP preview desktop app"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "IceBigPig"}]
+keywords = ["onvif", "rtsp", "ip-camera", "pyside6", "ws-discovery"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: X11 Applications :: Qt",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = [
+  "PySide6>=6.7,<7",
+  "requests>=2.32,<3",
+  "imageio-ffmpeg>=0.5,<1",
+  "keyring>=25,<26",
+  "psutil>=6,<8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[project.scripts]
+onvif-deck = "onvif_scanner.app:main"
+
+[project.urls]
+Homepage = "https://github.com/IceBigPig/ONVIF-Deck"
+Repository = "https://github.com/IceBigPig/ONVIF-Deck.git"
+Issues = "https://github.com/IceBigPig/ONVIF-Deck/issues"
+Changelog = "https://github.com/IceBigPig/ONVIF-Deck/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
