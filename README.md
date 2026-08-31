@@ -25,8 +25,8 @@ RTSP streams from one desktop workspace.**
 The ready-to-run macOS build supports Apple Silicon (M1, M2, M3, M4, and
 later) on macOS 11 or newer:
 
-- [Download DMG](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8F%B0-v1.1.1-macOS-arm64.dmg)
-- [Download ZIP](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8F%B0-v1.1.1-macOS-arm64.zip)
+- [Download DMG](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF-Deck-v1.1.1-macOS-arm64.dmg)
+- [Download ZIP](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF-Deck-v1.1.1-macOS-arm64.zip)
 - [Release notes and checksums](docs/releases/v1.1.1.md)
 
 This first binary release uses an ad-hoc signature and is not Apple-notarized.
