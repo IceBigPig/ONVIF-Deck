@@ -17,6 +17,19 @@
 
 > 仓库中的截图全部使用文档专用 IP 和合成视频画面，不包含任何真实摄像头、序列号、账号密码或私人场景。
 
+## Apple 芯片版下载
+
+已经提供可直接运行的 macOS Apple Silicon 版本，支持 M1、M2、M3、M4
+及后续 Apple 芯片，最低系统版本为 macOS 11：
+
+- [下载 DMG 安装包](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8F%B0-v1.1.1-macOS-arm64.dmg)
+- [下载 ZIP 压缩包](https://github.com/IceBigPig/ONVIF-Deck/releases/download/v1.1.1/ONVIF%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8F%B0-v1.1.1-macOS-arm64.zip)
+- [版本说明与校验值](docs/releases/v1.1.1.md)
+
+当前首个二进制版本使用临时签名，尚未经过 Apple 公证。如果首次启动时被
+macOS 阻止，请按住 Control 点击应用，选择“打开”，然后再次确认“打开”。
+该操作通常只需执行一次。
+
 ## 主要功能
 
 - 使用 WS-Discovery 扫描所有活动 IPv4 网卡；
