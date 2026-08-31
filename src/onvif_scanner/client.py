@@ -5,7 +5,6 @@ import hashlib
 import os
 from datetime import datetime, timedelta, timezone
 from html import escape
-from typing import Self
 from urllib.parse import urljoin, urlsplit, urlunsplit
 from xml.etree import ElementTree as ET
 
@@ -84,7 +83,7 @@ class OnvifClient:
     def close(self) -> None:
         self.session.close()
 
-    def __enter__(self) -> Self:
+    def __enter__(self) -> OnvifClient:
         return self
 
     def __exit__(self, *_: object) -> None:
